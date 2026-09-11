@@ -1,0 +1,10 @@
+<svg width="100%" height="100%" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path id="circleMob" d="M 40, 10 A 30,30 0 1,1 39.99, 10 Z" fill="none"/>
+  </defs>
+  <text fill="currentColor" font-family="'Maison Neue Extended', Arial, sans-serif" font-size="4.3" font-weight="700">
+    <textPath href="#circleMob" textLength="181" lengthAdjust="spacing">
+      RESIDENCE &bull; ELARIS &bull; RESIDENCE &bull; ELARIS &bull; 
+    </textPath>
+  </text>
+</svg>
