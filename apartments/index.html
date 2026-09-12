@@ -628,6 +628,67 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     mask-composite: add;
     -webkit-mask-composite: source-over;
   }
+
+  .preloader_curating {
+    grid-area: 1 / 6 / 2 / 10;
+    align-self: start;
+    height: var(--_units---u-96);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: var(--_fonts---font-body);
+    font-size: calc(12rem / var(--_special-units---scale-ratio));
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--_colors---base-1000--primary);
+    white-space: nowrap;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0;
+    transform: translateX(-5.5vw);
+  }
+
+  .preloader_curating_text {
+    display: inline-block;
+    letter-spacing: inherit;
+  }
+
+  .preloader_curating_dots {
+    display: inline-block;
+    text-align: left;
+    letter-spacing: 0.08em;
+    margin-left: 0.08em;
+    width: 2.2ch;
+    white-space: nowrap;
+  }
+
+  .preloader_dot {
+    display: inline-block;
+    transition: opacity 0.15s ease-in-out;
+  }
+
+  .preloader_dot-1 {
+    opacity: 1;
+  }
+
+  .preloader_dot-2,
+  .preloader_dot-3 {
+    opacity: 0;
+  }
+
+  @media screen and (max-width: 991px) {
+    .preloader_curating {
+      grid-area: 2 / 1 / 3 / 5;
+      height: auto;
+      margin-top: var(--_units---u-24);
+      font-size: calc(10rem / var(--_special-units---scale-ratio));
+      letter-spacing: 0.14em;
+      transform: none;
+    }
+  }
 </style></div><div class="style-css w-embed"><style>
   /** -------------------------------------------------
    * INITIALS
@@ -708,7 +769,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
   <path d="M75 75 C72 80 67 80 65 75 C67 70 72 70 75 75 Z" fill="currentColor"/>
   <!-- Center Core -->
   <circle cx="50" cy="50" r="4.5" fill="currentColor"/>
-</svg></div></div></div></div><div class="preloader_c"><div class="grid"><div class="preloader_title-l"><div data-part="h" class="c1 a-center">Costa</div></div><div class="preloader_logo"><div data-part="h" class="h3 a-center">Elaris<br/>Residence</div><div class="preloader_logo_a"><div data-part="a" class="a2 preloader_a a-center">Estepona</div></div></div><div class="preloader_title-r"><div data-part="h" class="c1 a-center">del Sol</div></div></div></div><div class="preloader_b"><div class="grid"><div class="s_title"><div data-part="line" class="preloader_progress"><div class="preloader_progress_fill"><div class="preloader_progress_track"></div></div></div><div class="u-32"></div><p data-part="p" class="l1 a-center">Elaris Residence<br/>A private coastal sanctuary.</p></div></div><div class="u-48"></div></div></div><div class="preloader_bg_arch"><div class="preloader_bg_arch_is-1"></div><div class="preloader_bg_arch_is-2"></div></div><div class="preloader_bg"><div class="preloader_bg_a"><img src="../assets/images/6a2311bd477167bbc41c9c03_e22485744735d6f17214f25b6157e9b5_preloader_bg.svg" loading="eager" alt="" class="img"/></div><div class="preloader_bg_decor"><div data-wf--decor--variant="large" class="decor"><div class="frame_l-tb w-embed"><svg
+</svg></div></div></div></div><div class="preloader_c"><div class="grid"><div class="preloader_title-l"><div data-part="h" class="c1 a-center">Costa</div></div><div class="preloader_logo"><div data-part="h" class="h3 a-center">Elaris<br/>Residence</div><div class="preloader_logo_a"><div data-part="a" class="a2 preloader_a a-center">Estepona</div></div></div><div class="preloader_title-r"><div data-part="h" class="c1 a-center">del Sol</div></div></div></div><div class="preloader_b"><div class="grid"><div class="s_title"><div data-part="line" class="preloader_progress"><div class="preloader_progress_fill"><div class="preloader_progress_track"></div></div></div><div class="u-32"></div><p data-part="p" class="l1 a-center">Elaris Residence<br/>A private coastal sanctuary.</p></div><div class="preloader_curating" data-part="curating"><span class="preloader_curating_text">CURATING YOUR EXPERIENCE</span><span class="preloader_curating_dots" aria-hidden="true"><span class="preloader_dot preloader_dot-1">.</span><span class="preloader_dot preloader_dot-2">.</span><span class="preloader_dot preloader_dot-3">.</span></span></div></div><div class="u-48"></div></div></div><div class="preloader_bg_arch"><div class="preloader_bg_arch_is-1"></div><div class="preloader_bg_arch_is-2"></div></div><div class="preloader_bg"><div class="preloader_bg_a"><img src="../assets/images/6a2311bd477167bbc41c9c03_e22485744735d6f17214f25b6157e9b5_preloader_bg.svg" loading="eager" alt="" class="img"/></div><div class="preloader_bg_decor"><div data-wf--decor--variant="large" class="decor"><div class="frame_l-tb w-embed"><svg
   width="100%"
   height="100%"
   xmlns="http://www.w3.org/2000/svg"
